@@ -1,0 +1,8 @@
+URL Repositorio GitHub:
+https://github.com/mateonardu/actividad-2.git
+
+
+URL Netlify:
+https://actividad-2-pweb.netlify.app/
+
+Persona B: Francisco Pique
