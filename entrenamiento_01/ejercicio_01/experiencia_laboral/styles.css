@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background: #e8e8e8;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 3vh 0 4vh;
+}
+
+.pagina {
+  width: 80%;
+  background: #ffffff;
+  padding: 2.5rem 3rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 0.8rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 0.4rem;
+}
+
+.fechas {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 1.2rem;
+}
+
+.informacion {
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+.foto {
+  margin-top: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.foto img {
+  width: 45%;
+  border-radius: 0.6rem;
+  border: 0.06rem #ccc;
+  display: block;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
