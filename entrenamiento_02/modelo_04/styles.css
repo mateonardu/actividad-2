@@ -1,0 +1,76 @@
+html, body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+p {                                  
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "b1 b2 b2 b4"
+        "b1 b3 b3 b4"
+        "b5 b5 b6 b6";
+    height: 100%;
+    width: 100%;
+}
+
+.box-1 { grid-area: b1; background-color: lightgreen; }
+.box-2 { grid-area: b2; background-color: lightgoldenrodyellow; }
+.box-3 { grid-area: b3; background-color: lightgoldenrodyellow; }
+.box-4 { grid-area: b4; background-color: lightgreen; }
+.box-5 { grid-area: b5; background-color: lightcoral; }
+.box-6 { grid-area: b6; background-color: lightblue; }
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: bold;
+    border-color: black;
+    border-style: solid;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+       display: flex;
+       flex-direction: column;
+    }
+    main div {
+        flex: 1;
+    }
+    .box-1 { background-color: lightgreen; }
+    .box-2 { background-color: lightgreen; }
+    .box-3 { background-color: lightgoldenrodyellow; }
+    .box-4 { background-color: lightgoldenrodyellow; }
+    .box-5 { background-color: lightblue; }
+    .box-6 { background-color: lightcoral; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        /*tengo que volver a redefinir porque se mantiene el template heredado*/
+        grid-template-areas:
+            "b1 b2"
+            "b3 b4"
+            "b5 b6";
+    }
+
+    .box-1 { background-color: lightgreen; }
+    .box-2 { background-color: lightgreen; }
+    .box-3 { background-color: lightgoldenrodyellow; }
+    .box-4 { background-color: lightgoldenrodyellow; }
+    .box-5 { background-color: lightblue; }
+    .box-6 { background-color: lightcoral; }
+}
